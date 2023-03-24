@@ -1,42 +1,127 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+* {
+	box-sizing: border-box;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+/*NavBar Style*/
+.navbar {
+	overflow: hidden;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.navbar .container {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	width: 80%;
+	text-align: center;
+	margin: 0 auto;
+	top: 33.8vw;
+	left: 50%;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.navbar .container span {
+	display: inline-block;
+	position: absolute;
+	height: 70px;
+	border-radius: 35px;
+	background-color: #21232D;
+	opacity: 70%;
+	z-index: -1;
+	transform: translateY(-86%);
+	transition: 0.3s ease-in-out;
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.select-nav-Items {
+	width: 150px;
+	height: 80px;
+	left: 310px;
+	margin-left: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.move-select-Items {
+	margin-left: 150px;
 }
-
-.card {
-  padding: 2em;
+.move-select-Items3 {
+	margin-left: 300px;
 }
-
-.read-the-docs {
-  color: #888;
+/* NavBar white rectangle shape for .nav-Items */
+.navbar .container .Items-white {
+	width: 450px;
+	background-color: #ffffff;
+	opacity: 30%;
+	z-index: -2;
+}
+.select-social-Icon {
+	width: 70px;
+	right: 521px;
+	marign-right: 0;
+}
+.move-social-Icon {
+	margin-right: -70px;
+}
+.move-social-Icon3 {
+	margin-right: -140px;
+}
+.move-social-Icon4 {
+	margin-right: -210px;
+}
+.navbar .container .Icon-white {
+	background-color: #ffffff;
+	opacity: 30%;
+	width: 280px;
+	right: 311px;
+	z-index: -2;
+}
+.navbar .container ul {
+	display: inline;
+	padding: 0;
+	margin: 0;
+}
+.navbar .container ul:last-child {
+	margin-left: 250px;
+	font-size: 0em;
+}
+.navbar .container ul li {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+.navbar .container ul li a {
+	display: inline-block;
+	vertical-align: -webkit-baseline-middle;
+	margin-left: 20px;
+	margin-right: 20px;
+	line-height: 1.1em;
+	width: 110px;
+}
+.navbar .container ul:last-child li a{
+	margin-left: 10px;
+	margin-right: 10px;
+	width: auto;
+}
+.navbar .nav-Items a {
+	font-size: 23px;
+	color: #ffffff;
+	opacity: 70%;
+}
+.navbar .svg-color {
+	filter: invert(100%) ;
+	opacity: 70%;
+}
+.navbar .social-Icon img {
+	width: 55px;
+	margin: -3px -2px -10px -3px;
+	padding: 0;
+	transform: translateY(-5%);
+	tabindex: 0;
+}
+.navbar .hover-effect:hover {
+	opacity: 100%;
+	font-weight: bold;
+}
+.navbar .hover-effect:focus {
+	opacity: 100%;
+	font-weight: bold;
+}
+.navbar a:focus-within .hover-effect {
+	opacity: 100%;
+}
+.navbar .navbar_background {
+	z-index: -1;
+	position: relative;
+	width: 100%;
 }
