@@ -6,14 +6,50 @@
 .navbar {
 	overflow: hidden;
 }
-.navbar .container {
+.navbar ul {
+	list-style: none;
+	margin: 5px 0;
+	padding: 0;
+	height: 60px;
+}
+.navbar a {
+	display: inline-block;
+	margin: 0 20px;
+	text-decoration: none;
+	color: #ffffff;
+	opacity: 70%;
+	font-size: 20px;
+	width: 110px;
+	vertical-align: -webkit-baseline-middle;
+}
+.navbar .sections-bar-nav {
 	position: absolute;
-	transform: translate(-50%, -50%);
-	width: 80%;
-	text-align: center;
-	margin: 0 auto;
 	top: 33.8vw;
-	left: 50%;
+	margin-right: 50vw;
+}
+
+.navbar .nav-Items {
+	display: inline;
+	text-align: center;
+}
+.navbar .social-Icon {
+	display: inline;
+}
+.navbar .sections-bar-social a {
+	width: 70px;
+	margin: 0;
+}
+.navbar .social-Icon img {
+	width: 55px;
+	margin: -3px -2px -10px 7px;
+	padding: 0;
+	transform: translateY(-5%);
+	tabindex: 0;
+}
+.navbar .sections-bar-social {
+	position: absolute;
+	margin-left: 50vw;
+	top: 34.4vw;
 }
 .navbar .container span {
 	display: inline-block;
@@ -23,13 +59,17 @@
 	background-color: #21232D;
 	opacity: 70%;
 	z-index: -1;
-	transform: translateY(-86%);
+	transform: translateY(-92%);
 	transition: 0.3s ease-in-out;
 }
+.navbar .container {
+	display: flex;
+	justify-content: center;
+}
+/* Nav Items Animations */
 .select-nav-Items {
 	width: 150px;
 	height: 80px;
-	left: 310px;
 	margin-left: 0;
 }
 .move-select-Items {
@@ -45,73 +85,35 @@
 	opacity: 30%;
 	z-index: -2;
 }
+/* Socail Icon Animation */
 .select-social-Icon {
 	width: 70px;
-	right: 521px;
-	marign-right: 0;
+	margin-left: 0;
 }
 .move-social-Icon {
-	margin-right: -70px;
+	margin-left: 70px;
 }
 .move-social-Icon3 {
-	margin-right: -140px;
+	margin-left: 140px;
 }
 .move-social-Icon4 {
-	margin-right: -210px;
+	margin-left: 210px;
 }
+/* NavBar white rectangle shape for .social-Icon */
 .navbar .container .Icon-white {
 	background-color: #ffffff;
 	opacity: 30%;
 	width: 280px;
-	right: 311px;
 	z-index: -2;
-}
-.navbar .container ul {
-	display: inline;
-	padding: 0;
-	margin: 0;
-}
-.navbar .container ul:last-child {
-	margin-left: 250px;
-	font-size: 0em;
-}
-.navbar .container ul li {
-	display: inline;
-	margin: 0;
-	padding: 0;
-}
-.navbar .container ul li a {
-	display: inline-block;
-	vertical-align: -webkit-baseline-middle;
-	margin-left: 20px;
-	margin-right: 20px;
-	line-height: 1.1em;
-	width: 110px;
-}
-.navbar .container ul:last-child li a{
-	margin-left: 10px;
-	margin-right: 10px;
-	width: auto;
-}
-.navbar .nav-Items a {
-	font-size: 23px;
-	color: #ffffff;
-	opacity: 70%;
 }
 .navbar .svg-color {
 	filter: invert(100%) ;
 	opacity: 70%;
 }
-.navbar .social-Icon img {
-	width: 55px;
-	margin: -3px -2px -10px -3px;
-	padding: 0;
-	transform: translateY(-5%);
-	tabindex: 0;
-}
 .navbar .hover-effect:hover {
 	opacity: 100%;
 	font-weight: bold;
+	color: #ffffff;
 }
 .navbar .hover-effect:focus {
 	opacity: 100%;
@@ -121,7 +123,7 @@
 	opacity: 100%;
 }
 .navbar .navbar_background {
-	z-index: -1;
+	z-index: -2;
 	position: relative;
 	width: 100%;
 }
