@@ -1,10 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Linkedin, GitHub, WhatsApp, Instagram } from '../assets/social icons/social-icons.js';
 import navbar_background from '../assets/images/navbar_background.png'
 
 const NavBar = () => {
 	const [isItemsMove, setIsItemsMove] = useState(false);
 	const [isIconMove, setIsIconMove] = useState(false);
+
+	const [loopNum, setLoopNum] = useState(0);
+	const [isDeleting, setIsDeleting] = useState(false);
+	const toRotate = [ " Programmer", " Web Developer", " Web Designer", " UI/UX Designer"];
+	const [text, setText] = useState('');
+	const [delta, setDelta] = useState(300 - Math.random() * 100);
+	const period = 2000;
 
 	const handleClick = (event) => {
 		const clickedElementID = event.target.id;
@@ -17,7 +24,7 @@ const NavBar = () => {
 			} else if (clickedElementID === "Current_projects") {
 				setIsItemsMove("select3");
 			}
-		};
+		}
 		if (clickedElementClass === "sections-bar-icon") {
 			if (clickedElementID === "Linkedin") {
 				setIsIconMove("Linkedin");
@@ -28,10 +35,41 @@ const NavBar = () => {
 			} else if (clickedElementID === "Instagram") {
 				setIsIconMove("Instagram");
 			}
-		};
-	};
+		}
+	}
+
+	useEffect(() => {
+		let ticker = setInterval(() => {
+			tick();
+			}, delta)
+		return () => {
+			clearInterval(ticker)};
+			}, [text])
+
+	const tick = () => {
+		let i = loopNum % toRotate.length;
+		let fullText = toRotate[i];
+		let updatedText = isDeleting ? fullText.substring(0, text.length -1) : fullText.substring(0, text.length +1)
+		
+		setText(updatedText);
+
+		if(isDeleting) {
+			setDelta(prevDelta => prevDelta / 2);
+			console.log("run", loopNum);
+		}
+		if (!isDeleting && updatedText === fullText) {
+			setIsDeleting(true);
+			setDelta(period);
+		} else if (isDeleting && updatedText === "") {
+			setIsDeleting(false);
+			setLoopNum(loopNum + 1);
+			setDelta(300);
+		}
+	}
+
 	return (
 	<nav class="navbar">
+		<h1>{"Hi! I'm Asela"}<span class="wrap">{text}</span></h1>
 		<img class="navbar_background" src={ navbar_background } alt="background image" />
 		<div class="container">
 			<div class="sections-bar-nav">
