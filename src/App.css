@@ -7,6 +7,7 @@
 .navbar {
 	overflow: hidden;
 }
+/* h1 and h2 is the welcome screen text */
 .navbar h1 {
 	position: absolute;
 	left: 15vw;
@@ -22,6 +23,7 @@
 	top: 13vw;
 	background-image: linear-gradient(90deg, #00597C70, #FF660080);
 }
+/* Beginning of the navbar list items and social icons */
 .navbar ul {
 	list-style: none;
 	margin: 5px 0;
@@ -160,6 +162,20 @@
 	position: relative;
 	width: 100%;
 }
+
+/* About_me Section */
+.aboutMeSection {
+	height: 1420px;
+	background-color: #FF6600;
+}
+.aboutMeSection h1 {
+	text-align: center;
+	font-size: 2em;
+	padding-top: 30px;
+}
+.aboutMeSection p {
+	width: 500px;
+}
 @media (max-width: 1700PX) {
 	.navbar h1 {
 		font-size: 2.5em;
@@ -173,6 +189,7 @@
 	}
 }
 @media (max-width: 1300PX) {
+	/* Navbar Responsive Sections */
 	.navbar h1 {
 		font-size: 1.6em;
 	}
@@ -213,5 +230,4 @@
 		width: 50px;
 		margin: 4px auto -10px auto;
 	}
-}
 }
