@@ -69,6 +69,7 @@ const NavBar = () => {
 
 	return (
 	<nav class="navbar">
+		<h2>Welcome to my portfolio</h2>
 		<h1>{"Hi! I'm Asela"}<span class="wrap">{text}</span></h1>
 		<img class="navbar_background" src={ navbar_background } alt="background image" />
 		<div class="container">

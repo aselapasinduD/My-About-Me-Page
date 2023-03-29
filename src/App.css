@@ -10,23 +10,17 @@
 .navbar h1 {
 	position: absolute;
 	left: 15vw;
-	top: 15vw;
+	top: 16vw;
 	letter-spacing: 20px;
 }
-@media (max-width: 1700PX) {
-	.navbar h1 {
-		font-size: 2.5em;
-	}
-}
-@media (max-width: 1400PX) {
-	.navbar h1 {
-		font-size: 2em;
-	}
-}
-@media (max-width: 1300PX) {
-	.navbar h1 {
-		font-size: 1.6em;
-	}
+.navbar h2 {
+	position: absolute;
+	font-weight: 300;
+	padding: 0 8px;
+	border: 1px solid white;
+	left: 15vw;
+	top: 13vw;
+	background-image: linear-gradient(90deg, #00597C70, #FF660080);
 }
 .navbar ul {
 	list-style: none;
@@ -39,7 +33,7 @@
 	text-decoration: none;
 	color: #ffffff;
 	opacity: 70%;
-	font-size: 20px;
+	font-size: 1.3em;
 	width: 110px;
 	vertical-align: -webkit-baseline-middle;
 }
@@ -65,13 +59,15 @@
 }
 .navbar .sections-bar-social a {
 	width: 70px;
+	height: 55px;
 	margin: 0;
 }
 .navbar .social-Icon img {
-	width: 55px;
-	margin: -3px -2px -10px 7px;
+	display: block;
+	width: 50px;
+	margin: 0 auto;
+	margin-top: 5px;
 	padding: 0;
-	tabindex: 0;
 }
 .navbar .sections-bar-social {
 	position: absolute;
@@ -92,6 +88,8 @@
 .navbar .container {
 	display: flex;
 	justify-content: center;
+	width: 90%;
+	margin: 0 auto;
 }
 /* Nav Items Animations */
 .select-nav-Items {
@@ -142,6 +140,10 @@
 	font-weight: bold;
 	color: #ffffff;
 }
+.navbar .sections-bar-social .hover-effect:hover {
+	width: 55px;
+	margin: 4px auto -10px auto;
+}
 .navbar .hover-effect:focus {
 	opacity: 100%;
 	font-weight: bold;
@@ -149,8 +151,67 @@
 .navbar a:focus-within .hover-effect {
 	opacity: 100%;
 }
+.navbar .sections-bar-social img:focus-within .hover-effect {
+	width: 55px;
+	margin: 4px auto -10px auto;
+}
 .navbar .navbar_background {
 	z-index: -2;
 	position: relative;
 	width: 100%;
+}
+@media (max-width: 1700PX) {
+	.navbar h1 {
+		font-size: 2.5em;
+	}
+	.navbar h2 {
+		font-size: 1.3em;
+}
+@media (max-width: 1400PX) {
+	.navbar h1 {
+		font-size: 2em;
+	}
+}
+@media (max-width: 1300PX) {
+	.navbar h1 {
+		font-size: 1.6em;
+	}
+	.navbar h2 {
+		font-size: 1em;
+	}
+	.navbar a {
+		font-size: 1em;
+		margin: 0 10px;
+	}
+	.navbar .container span {
+		height: 60px;
+		transform: translateY(-91%);
+	}
+	.select-nav-Items {
+		width: 130px;
+	}
+	.move-select-Items {
+		margin-left: 130px;
+	}
+	.move-select-Items3 {
+		margin-left: 260px;
+	}
+	.navbar .container .Items-white {
+		width: 390px;
+	}
+	.navbar .sections-bar-nav a:last-child {
+		padding: 9px 0;
+	}
+	.navbar .social-Icon img {
+		width: 45px;
+		margin-top: 2px;
+	}
+	.navbar .sections-bar-social a {
+		height: 50px;
+	}
+	.navbar .sections-bar-social .hover-effect:hover {
+		width: 50px;
+		margin: 4px auto -10px auto;
+	}
+}
 }
