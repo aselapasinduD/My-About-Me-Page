@@ -13,6 +13,7 @@
 	left: 15vw;
 	top: 16vw;
 	letter-spacing: 20px;
+	font-weight: 400;
 }
 .navbar h2 {
 	position: absolute;
@@ -170,11 +171,58 @@
 }
 .aboutMeSection h1 {
 	text-align: center;
-	font-size: 2em;
+	font-size: 2.2em;
 	padding-top: 30px;
 }
-.aboutMeSection p {
-	width: 500px;
+.aboutMeSection .details h2 {
+	margin: 15px 0;
+	font-weight: 500;
+}
+.aboutMeSection .details p {
+	width: 35vw;
+	font-size: 1.3em;
+	font-weight: 300;
+}
+.aboutMeSection .details {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 50px;
+}
+.aboutMeSection .details span {
+	margin-top: 400px;
+	margin-left: 60px;
+}
+.aboutMeSection .stories {
+	position: absolute;
+	right: 50px;
+	transform: translateY(-95%);
+}
+.aboutMeSection .stories h2 {
+	text-align: center;
+	margin-bottom: 30px;
+	font-size: 1.8em;
+}
+.aboutMeSection .stories .story {
+	display: block;
+	width: 300px;
+	height: 535px;
+	background-color: #C9C9C9;
+	box-shadow: 0 6px 10px 3px #00000070;
+	border-radius: 30px;
+}
+.aboutMeSection .stories .story:not(:first-child) {
+	margin-left: 30px;
+}
+.aboutMeSection .stories .story:first-child {
+	box-shadow: -2px 5px 10px 5px #00000070;
+}
+.aboutMeSection .stories .story:last-child {
+	box-shadow: 2px 5px 10px 5px #00000070;
+}
+.aboutMeSection .stories div {
+	display: flex;
+	flex-direction: row;
 }
 @media (max-width: 1700PX) {
 	.navbar h1 {
@@ -182,6 +230,20 @@
 	}
 	.navbar h2 {
 		font-size: 1.3em;
+	}
+	.aboutMeSection .details img {
+		width: 800px;
+	}
+	.aboutMeSection .stories {
+		transform: translateY(-65%);
+	}
+	.aboutMeSection .details span {
+		margin-top: 300px;
+	}
+	.aboutMeSection .stories .story {
+		width: 280px;
+		height: 515px;
+	}
 }
 @media (max-width: 1400PX) {
 	.navbar h1 {
@@ -229,5 +291,14 @@
 	.navbar .sections-bar-social .hover-effect:hover {
 		width: 50px;
 		margin: 4px auto -10px auto;
+	}
+	.aboutMeSection .details img {
+		width: 700px;
+	}
+	.aboutMeSection .stories {
+		transform: translateY(-38%);
+		margin: 0 auto;
+		right: unset;
+		left: 16%;
 	}
 }
