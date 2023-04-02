@@ -2,6 +2,11 @@
 	box-sizing: border-box;
 	margin: 0;
 }
+h1 {
+	text-align: center;
+	font-size: 2.2em;
+	padding-top: 30px;
+}
 
 /*NavBar Style*/
 .navbar {
@@ -13,6 +18,7 @@
 	left: 15vw;
 	top: 16vw;
 	letter-spacing: 20px;
+	font-size: 3.2em;
 	font-weight: 400;
 }
 .navbar h2 {
@@ -170,9 +176,7 @@
 	background-color: #FF6600;
 }
 .aboutMeSection h1 {
-	text-align: center;
 	font-size: 2.2em;
-	padding-top: 30px;
 }
 .aboutMeSection .details h2 {
 	margin: 15px 0;
@@ -230,11 +234,72 @@
 	background-color: #131616;
 }
 .skillsSection h1 {
-	text-align: center;
 	font-size: 2.2em;
-	padding-top: 30px;
 }
-@media (max-width: 1700PX) {
+.skillsSection .skills-wrapper {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	overflow: hidden;
+	margin-top: 45px;
+}
+.skillsSection .arrow-left {
+	margin-left: 0;
+}
+.skillsSection .arrow-right {
+	margin-left: 0;
+	transform: scaleX(-1);
+}
+.skillsSection .skillsList {
+	overflow-x: hidden;
+	max-width: 1681px;
+	height: 100%;
+}
+.skillsSection .translateXwrapper {
+	display: flex;
+	gap: 35px;
+}
+.skillsSection .skill {
+	min-width: 537px;
+	height: 292px;
+	background-color: #D9D9D9;
+	border-radius: 30px;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+.skillsSection h2 {
+	text-align: center;
+}
+.skillsSection button {
+	border: none;
+	outline: none !important;
+	display: flex;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: rgba(0, 0, 0, 0);
+	z-index: 1;
+	transition: background-color 0.3s ease-in-out;
+}
+.skillsSection button:active {
+	background-color: #D9D9D930;
+}
+.skillsSection .skills-wrapper .left-button{
+	margin-left: 0;
+	left: 0;
+	padding-left: 100px;
+	padding-right: 10px;
+}
+.skillsSection .skills-wrapper .right-button{
+	margin-right: 0;
+	right: 0;
+	padding-right: 100px;
+	padding-left: 10px;
+}
+}@media (max-width: 1700PX) {
 	.navbar h1 {
 		font-size: 2.5em;
 	}

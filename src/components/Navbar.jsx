@@ -8,7 +8,7 @@ const NavBar = () => {
 
 	const [loopNum, setLoopNum] = useState(0);
 	const [isDeleting, setIsDeleting] = useState(false);
-	const toRotate = [ " Programmer", " Web Developer", " Web Designer", " UI/UX Designer"];
+	const toRotate = [ "Programmer", "Web Developer", "Web Designer", "UI/UX Designer"];
 	const [text, setText] = useState('');
 	const [delta, setDelta] = useState(300 - Math.random() * 100);
 	const period = 2000;
@@ -70,7 +70,7 @@ const NavBar = () => {
 	return (
 	<nav class="navbar">
 		<h2>Welcome to my portfolio</h2>
-		<h1>{"Hi! I'm Asela"}<span class="wrap">{text}</span></h1>
+		<h1>{"Hi! I'm Asela "}<span class="wrap">{text}</span></h1>
 		<img class="navbar_background" src={ navbar_background } alt="background image" />
 		<div class="container">
 			<div class="sections-bar-nav">
