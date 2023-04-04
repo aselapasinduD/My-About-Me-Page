@@ -299,6 +299,30 @@ h1 {
 	padding-right: 100px;
 	padding-left: 10px;
 }
+/*Current Projects*/
+.currentProjectSection {
+	height: 900px;
+	background-color: #131616;
+}
+.currentProjectSection h1 {
+	font-size: 2.2em;
+}
+.currentProjectSection .currentProjectCards {
+	display: flex;
+	justify-content: center;
+	gap: 35px;
+	margin-top: 50px;
+}
+.currentProjectSection .projectCard {
+	width: 350px;
+	height: 620px;
+	background-color: #D9D9D9;
+	border-radius: 30px;
+	text-align: center;
+}
+.currentProjectSection .currentProjectCards h2 {
+	margin-top: 20px;
+}
 }@media (max-width: 1700PX) {
 	.navbar h1 {
 		font-size: 2.5em;
