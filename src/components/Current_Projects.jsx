@@ -16,6 +16,7 @@ const Current_Projects = () => {
 					<h2>Title of Project</h2>
 				</div>
 			</div>
+			<button><p>more projects</p></button>
 		</div>
 	)
 }

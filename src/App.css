@@ -4,7 +4,7 @@
 }
 h1 {
 	text-align: center;
-	font-size: 2.2em;
+	font-size: 2em;
 	padding-top: 30px;
 }
 
@@ -43,8 +43,10 @@ h1 {
 	color: #ffffff;
 	opacity: 70%;
 	font-size: 1.3em;
+	font-weight: 500;
 	width: 110px;
 	vertical-align: -webkit-baseline-middle;
+	transition: font-weight 0.2s ease-in-out;
 }
 .navbar .sections-bar-nav a:last-child {
 	line-height: 1em;
@@ -77,6 +79,7 @@ h1 {
 	margin: 0 auto;
 	margin-top: 5px;
 	padding: 0;
+	transition: width 0.18s ease-in-out;
 }
 .navbar .sections-bar-social {
 	position: absolute;
@@ -303,6 +306,7 @@ h1 {
 .currentProjectSection {
 	height: 900px;
 	background-color: #131616;
+	text-align: center;
 }
 .currentProjectSection h1 {
 	font-size: 2.2em;
@@ -322,6 +326,33 @@ h1 {
 }
 .currentProjectSection .currentProjectCards h2 {
 	margin-top: 20px;
+}
+.currentProjectSection button {
+	width: 200px;
+	height: 50px;
+	margin-top: 50px;
+	background-color: #FF6600;
+	border-radius: 25px;
+	border: none;
+	outline: none !important;
+	transition: width 0.3s ease-in-out;
+}
+.currentProjectSection button p {
+	opacity: 80%;
+	font-size: 1.3em;
+	font-weight: 400;
+	transition: font-weight 0.2s ease-in-out;
+}
+.currentProjectSection button:hover p {
+	font-weight: 600;
+	opacity: 100%;
+}
+.currentProjectSection button:hover{
+	width: 220px;
+}
+.currentProjectSection button:focus p {
+	font-weight: 600;
+	opacity: 100%;
 }
 }@media (max-width: 1700PX) {
 	.navbar h1 {
