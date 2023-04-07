@@ -354,6 +354,105 @@ h1 {
 	font-weight: 600;
 	opacity: 100%;
 }
+/* Footer Section */
+.footerSection {
+	height: 610px;
+	background-color: #FF6600;
+}
+.footerSection .pageDetails {
+	display: flex;
+	justify-content: center;
+	padding-top: 100px;
+	gap: 100px
+}
+.footerSection .contactForm {
+	width: 523px;
+}
+.footerSection .contactForm #fullName {
+	width: 180px;
+	height: 65px;
+}
+.footerSection .contactForm #email {
+	width: 330px;
+	height: 65px;
+	margin-left: 12px;
+}
+.footerSection .contactForm #massage {
+	width: 523px;
+	height: 222px;
+	margin-top: 12px;
+	text-align: left;
+}
+.footerSection .contactForm #send {
+	width: 120px;
+	height: 40px;
+	position: absolute;
+	background-color: #FF6600;
+	color: #FFFFFF;
+	font-size: 1.4em;
+	margin-left: -150px;
+	margin-top: 180px;
+	box-shadow: 0px 2px 8px 2px #00000080;
+	transition-property: width, margin-left, margin-top, box-shadow;
+	transition-duration: 0.2s, 0.2s, 0.2s, 0.2s;
+}
+.footerSection .contactForm #send:hover {
+	width: 128px;
+	margin-left: -154px;
+	font-weight: 550;
+	box-shadow: 0px 2px 8px 2px #00000070;
+}
+.footerSection .contactForm #send:active {
+	width: 116px;
+	margin-left: -146px;
+	height: 36px;
+	margin-top: 182px;
+	box-shadow: 0px 2px 6px 2px #00000090;
+}
+.footerSection .contactForm .inputs {
+	border: none;
+	border-radius: 30px;
+	font-size: 1.2em;
+	color: #131616;
+	text-align: center;
+	background-color: #ffffff;
+	outline: none;
+}
+.footerSection .form label:first-child {
+	margin-left: 50px;
+}
+.footerSection .form label {
+	margin-left: 210px;
+}
+.footerSection .contactForm .inputs::placeholder {
+	color: #13161630;
+}
+.footerSection .selfImage img {
+	width: 323px;
+	border-radius: 51%;
+}
+.footerSection .pageDetails ul {
+	list-style: none;
+	padding: 0;
+}
+.footerSection hr {
+	margin: 0 100px;
+	margin-top: 30px;
+	border-color: #131616;
+}
+.footerSection span {
+	display: flex;
+	justify-content: center;
+	opacity: 80%;
+	margin: 0 100px;
+}
+.footerSection span p.copyrights {
+	margin-left: auto;
+	padding-left: 70px;
+}
+.footerSection span p.date {
+	margin-left: auto;
+}
 }@media (max-width: 1700PX) {
 	.navbar h1 {
 		font-size: 2.5em;
