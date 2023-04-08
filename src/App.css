@@ -453,7 +453,7 @@ h1 {
 .footerSection span p.date {
 	margin-left: auto;
 }
-}@media (max-width: 1700PX) {
+@media (max-width: 1700PX) {
 	.navbar h1 {
 		font-size: 2.5em;
 	}
