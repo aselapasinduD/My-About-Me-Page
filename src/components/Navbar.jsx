@@ -71,13 +71,12 @@ const NavBar = () => {
 	<nav class="navbar">
 		<h2>Welcome to my portfolio</h2>
 		<h1>{"Hi! I'm Asela "}<span class="wrap">{text}</span></h1>
-		<img class="navbar_background" src={ navbar_background } alt="background image" />
 		<div class="container">
 			<div class="sections-bar-nav">
 				<ul className="sections-bar">
-					<li className="nav-Items" ><a id="About_me" onMouseOver={handleClick} onClick={handleClick} href="#" class="hover-effect">About Me</a></li>
-					<li className="nav-Items" ><a id="Skills" onMouseOver={handleClick} onClick={handleClick} href="#" class="hover-effect">Skills</a></li>
-					<li className="nav-Items"><a id="Current_projects" onMouseOver={handleClick} onClick={handleClick} href="#" class="hover-effect">Current <br /> Projects</a></li>
+					<li className="nav-Items" ><a id="About_me" onMouseOver={handleClick} onClick={handleClick} href="#aboutMe" class="hover-effect">About Me</a></li>
+					<li className="nav-Items" ><a id="Skills" onMouseOver={handleClick} onClick={handleClick} href="#skills" class="hover-effect">Skills</a></li>
+					<li className="nav-Items"><a id="Current_projects" onMouseOver={handleClick} onClick={handleClick} href="#currentProject" class="hover-effect">Current <br /> Projects</a></li>
 					<div class="second-wrapper">
 						<span className={`select-nav-Items ${isItemsMove === true ? "move-select-Items" : isItemsMove === "select3" ? "move-select-Items3" : null }`}></span>
 						<span className="Items-white select-nav-Items"></span>

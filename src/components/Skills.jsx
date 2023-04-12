@@ -53,7 +53,7 @@ const Skills = () => {
 	}
 	
 	return (
-		<div className="skillsSection">
+		<div id="skills" className="skillsSection">
 			<h1>Skills</h1>
 			<div className="skills-wrapper">
 				<button className="left-button" onClick={handleLeftButtonClick}><img src={Arrow_head} class="arrow arrow-left" alt="Arrow Head" /></button>
