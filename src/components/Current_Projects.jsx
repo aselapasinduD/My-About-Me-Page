@@ -3,7 +3,7 @@ import React from 'react';
 const Current_Projects = () => {
 	
 	return (
-		<div class="currentProjectSection">
+		<div id="currentProject" class="currentProjectSection">
 			<h1>Current Projects</h1>
 			<div class="currentProjectCards">
 				<div class="projectCard">
