@@ -1,6 +1,8 @@
 * {
 	box-sizing: border-box;
 	margin: 0;
+	scroll-padding: 83px;
+	scroll-behavior: smooth;
 }
 h1 {
 	text-align: center;
@@ -54,7 +56,7 @@ h1 {
 }
 .navbar .sections-bar-nav a:last-child {
 	line-height: 1em;
-	padding: 5px 0;
+	padding: 6.71px 0;
 }
 .navbar .sections-bar-nav {
 	position: absolute;
@@ -85,7 +87,7 @@ h1 {
 	display: block;
 	width: 50px;
 	margin: 0 auto;
-	margin-top: 5px;
+	margin-top: 3px;
 	padding: 0;
 	transition: width 0.18s ease-in-out;
 }
@@ -102,14 +104,16 @@ h1 {
 	background-color: #21232D;
 	opacity: 70%;
 	z-index: 1;
-	transform: translateY(-85%);
+	transform: translateY(-89%);
 	transition: 0.3s ease-in-out;
 }
 .navbar .container {
 	display: flex;
 	justify-content: center;
-	width: 90%;
+	width: 100%;
+	height: 0;
 	margin: 0 auto;
+	transition: height 0.5s ease-in-out;
 }
 /* Nav Items Animations */
 .select-nav-Items {
@@ -162,7 +166,7 @@ h1 {
 }
 .navbar .sections-bar-social .hover-effect:hover {
 	width: 55px;
-	margin: 4px auto -10px auto;
+	margin: 0 auto -10px auto;
 }
 .navbar .hover-effect:focus {
 	opacity: 100%;
@@ -173,8 +177,35 @@ h1 {
 }
 .navbar .sections-bar-social img:focus-within .hover-effect {
 	width: 55px;
-	margin: 4px auto -10px auto;
+	margin: 0 auto -10px auto;
 }
+@keyframes navbarScrollHeight {
+	from { height: 50px;}
+	to { height: 84px;}
+}
+.navbar .container.NavbarScroll {
+	position: fixed;
+	z-index: 3;
+	height: 84px;
+	width: 100%;
+	background-image: url("/src/assets/images/navbar_background.png");
+	background-position: left bottom;
+	background-size: cover;
+	animation-name: navbarScrollHeight;
+	animation-duration: 0.3s;
+	animation-timing-function: ease-out;
+}
+@keyframes top10px {
+	from {top: -10px;}
+	to {top: 8px;}
+}
+.navbar .container .scrollTop {
+	top: 8px;
+	animation-name: top10px;
+	animation-duration: 0.5s;
+	animation-timing-function: ease-in-out;
+}
+
 /* About_me Section */
 .aboutMeSection {
 	height: 1420px;
