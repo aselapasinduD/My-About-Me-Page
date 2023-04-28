@@ -1,7 +1,7 @@
 import React from 'react';
 import about_me from '../assets/images/About Me.png';
 
-const About_me = (scroll) => {
+const About_me = () => {
 	
 	return (
 		<div id="aboutMe" class="aboutMeSection">
