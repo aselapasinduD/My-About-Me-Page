@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Linkedin, GitHub, WhatsApp, Instagram } from '../assets/social icons/social-icons.js';
 import navbar_background from '../assets/images/navbar_background.png'
 
-const NavBar = () => {
+const NavBar = (scroll) => {
 	{/*Navbar navigation varibals for create animation*/}
 	const [isItemsMove, setIsItemsMove] = useState(false);
 	const [isIconMove, setIsIconMove] = useState(false);
