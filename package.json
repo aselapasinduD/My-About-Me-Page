@@ -1,6 +1,6 @@
 {
   "homepage": "http://aselapasinduD.github.io/My-About-Me-Page",
-  "name": "About-Me-Page",
+  "name": "--",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,8 +10,6 @@
     "deploy": "gh-page -d build",
     "build": "vite build",
     "preview": "vite preview"
-    "predeploy": "npm run build",
-    "deploy" : "gh-pages -d build"
   },
   "dependencies": {
     "react": "^18.2.0",
