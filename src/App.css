@@ -1,7 +1,7 @@
 * {
 	box-sizing: border-box;
 	margin: 0;
-	scroll-padding: 82px;
+	scroll-padding: 83px;
 	scroll-behavior: smooth;
 }
 h1 {
@@ -180,13 +180,13 @@ h1 {
 	margin: 0 auto -10px auto;
 }
 @keyframes navbarScrollHeight {
-	from { height: 40px;}
-	to { height: 82px;}
+	from { height: 50px;}
+	to { height: 84px;}
 }
 .navbar .container.NavbarScroll {
 	position: fixed;
 	z-index: 3;
-	height: 82px;
+	height: 84px;
 	width: 100%;
 	background-image: url("/src/assets/images/navbar_background.png");
 	background-position: left bottom;
