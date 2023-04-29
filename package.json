@@ -1,13 +1,10 @@
 {
-  "homepage": "http://aselapasinduD.github.io/My-About-Me-Page",
   "name": "--",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "predeploy": "npm run build",
-    "deploy": "gh-page -d build",
     "build": "vite build",
     "preview": "vite preview"
   },
