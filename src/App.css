@@ -1,7 +1,7 @@
 * {
 	box-sizing: border-box;
 	margin: 0;
-	scroll-padding: 83px;
+	scroll-padding: 82px;
 	scroll-behavior: smooth;
 }
 h1 {
@@ -113,7 +113,6 @@ h1 {
 	width: 100%;
 	height: 0;
 	margin: 0 auto;
-	transition: height 0.5s ease-in-out;
 }
 /* Nav Items Animations */
 .select-nav-Items {
@@ -181,12 +180,12 @@ h1 {
 }
 @keyframes navbarScrollHeight {
 	from { height: 50px;}
-	to { height: 84px;}
+	to { height: 82px;}
 }
 .navbar .container.NavbarScroll {
 	position: fixed;
 	z-index: 3;
-	height: 84px;
+	height: 82px;
 	width: 100%;
 	background-image: url("/src/assets/images/navbar_background.png");
 	background-position: left bottom;
