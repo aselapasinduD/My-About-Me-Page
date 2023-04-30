@@ -94,10 +94,10 @@ const NavBar = (scroll) => {
 			</div>
 			<div className={`sections-bar-social ${isNavbarScroll === true ? "scrollTop" : ""}`}>
 				<ul className="sections-bar-icon">
-					<li className="social-Icon Linkedin"><a href="https://www.linkedin.com/in/asela-pasindu-dias-55a7a7210/" target="blank"><img id="Linkedin" onMouseOver={handleClick} onClick={handleClick} class="svg-color hover-effect" src={Linkedin} alt="Linkedin" /></a></li>
-					<li className="social-Icon GitHub"><a href="https://github.com/aselapasinduD" target="blank"><img id="GitHub" onMouseOver={handleClick} onClick={handleClick} class="svg-color hover-effect" src={GitHub} alt="GitHub" /></a></li>
-					<li className="social-Icon WhatsApp"><a href="https://wa.me/94789991578" target="blank"><img id="WhatsApp" onMouseOver={handleClick} onClick={handleClick} class="svg-color hover-effect" src={WhatsApp} alt="WhatsApp" /></a></li>
-					<li className="social-Icon Instagram"><a href="https://www.instagram.com/asel_pasindu/" target="blank"><img id="Instagram" onMouseOver={handleClick} onClick={handleClick} class="svg-color hover-effect" src={Instagram} alt="Instagram" /></a></li>
+					<li className="social-Icon Linkedin"><a id="Linkedin" onMouseOver={handleClick} onClick={handleClick} href="https://www.linkedin.com/in/asela-pasindu-dias-55a7a7210/" target="blank"><img className="svg-color hover-effect" src={Linkedin} alt="Linkedin" /></a></li>
+					<li className="social-Icon GitHub"><a id="GitHub" onMouseOver={handleClick} onClick={handleClick} href="https://github.com/aselapasinduD" target="blank"><img className="svg-color hover-effect" src={GitHub} alt="GitHub" /></a></li>
+					<li className="social-Icon WhatsApp"><a id="WhatsApp" onMouseOver={handleClick} onClick={handleClick} href="https://wa.me/94789991578" target="blank"><img className="svg-color hover-effect" src={WhatsApp} alt="WhatsApp" /></a></li>
+					<li className="social-Icon Instagram"><a id="Instagram" onMouseOver={handleClick} onClick={handleClick} href="https://www.instagram.com/asel_pasindu/" target="blank"><img className="svg-color hover-effect" src={Instagram} alt="Instagram" /></a></li>
 					<div className="second-wrapper">
 						<span className={`select-social-Icon ${isIconMove === "Linkedin" ? "select-social-Icon" : isIconMove === "Github" ? "move-social-Icon" : isIconMove === "Whatsapp" ? "move-social-Icon3" : isIconMove === "Instagram" ? "move-social-Icon4" : null }`}></span>
 						<span className="Icon-white select-social-Icon"></span>
