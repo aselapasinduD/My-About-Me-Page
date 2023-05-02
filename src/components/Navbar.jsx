@@ -75,11 +75,23 @@ const NavBar = (scroll) => {
 		}
 	}
 
+	const openMenu = useRef();
+	const showMenuList = useRef();
+	const showNavMenu = () => {
+		openMenu.current.classList.toggle("Navmenu");
+		showMenuList.current.classList.toggle("NavMenuItems");
+	}
+
 	return (
 	<nav className="navbar">
 		<h2>Welcome to my portfolio</h2>
 		<h1>{"Hi! I'm Asela "}<span className="wrap">{text}</span></h1>
-		<div className={`container ${isNavbarScroll === true ? "NavbarScroll": ""}`}>
+		<div ref={openMenu} onClick={showNavMenu} className="Navbutton">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<div ref={showMenuList} className={`container ${isNavbarScroll === true ? "NavbarScroll": ""}`}>
 			<div className={`sections-bar-nav ${isNavbarScroll === true ? "scrollTop" : ""}`}>
 				<ul className="sections-bar">
 					<li className="nav-Items" ><a id="About_me" onMouseOver={handleClick} onClick={handleClick} href="#aboutMe" className="hover-effect">About Me</a></li>
