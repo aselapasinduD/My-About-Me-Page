@@ -1,7 +1,7 @@
 import React from 'react';
 import about_me from '../assets/images/About Me.png';
 
-const About_me = (scroll) => {
+const About_me = () => {
 	
 	return (
 		<div id="aboutMe" class="aboutMeSection">
@@ -15,13 +15,18 @@ const About_me = (scroll) => {
 			</section>
 			<section class="stories">
 				<h2>Latest Stories</h2>
-				<div>
-					<span class="story">
-					</span>
-					<span class="story">
-					</span>
-					<span class="story">
-					</span>
+				<div class="storyBox">
+					<div class="storyList">
+						<span class="story">
+							1
+						</span>
+						<span class="story">
+							2
+						</span>
+						<span class="story">
+							3
+						</span>
+					</div>
 				</div>
 			</section>
 		</div>

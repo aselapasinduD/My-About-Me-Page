@@ -20,7 +20,7 @@ const Footer = () => {
 						<li>page3</li>
 					</ul>
 				</section>
-				<section>
+				<section class="contacts">
 					<h3>Contacts</h3>
 					<ul>
 						<li>contact1</li>
