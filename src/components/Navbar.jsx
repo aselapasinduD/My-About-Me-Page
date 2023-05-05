@@ -31,12 +31,15 @@ const NavBar = (scroll) => {
 	}
 
 	{/*If Scroll Down to other sections will pop up Little navbar on the top of the window*/}
+	const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 	const [isNavbarScroll, setNavbarScroll] = useState(false);
 	const fixedNavbar = () => {
-		if (window.scrollY > 650){
-			setNavbarScroll(true);
-		} else {
-			setNavbarScroll(false);
+		if (isMobile === false) {
+			if (window.scrollY > 650){
+				setNavbarScroll(true);
+			} else {
+				setNavbarScroll(false);
+			}
 		}
 	}
 	window.addEventListener("scroll", fixedNavbar);
