@@ -80,9 +80,15 @@ const NavBar = (scroll) => {
 
 	const openMenu = useRef();
 	const showMenuList = useRef();
+	const closeTopX = useRef();
+	const closeBottomX = useRef();
+	const closeHide = useRef();
 	const showNavMenu = () => {
 		openMenu.current.classList.toggle("Navmenu");
 		showMenuList.current.classList.toggle("NavMenuItems");
+		closeTopX.current.classList.toggle("topX");
+		closeBottomX.current.classList.toggle("bottomX");
+		closeHide.current.classList.toggle("Hide");
 	}
 
 	return (
@@ -90,9 +96,9 @@ const NavBar = (scroll) => {
 		<h2>Welcome to my portfolio</h2>
 		<h1>{"Hi! I'm Asela "}<span className="wrap">{text}</span></h1>
 		<div ref={openMenu} onClick={showNavMenu} className="Navbutton">
-			<span></span>
-			<span></span>
-			<span></span>
+			<span ref={closeTopX}></span>
+			<span ref={closeHide}></span>
+			<span ref={closeBottomX}></span>
 		</div>
 		<div ref={showMenuList} className={`container ${isNavbarScroll === true ? "NavbarScroll": ""}`}>
 			<div className={`sections-bar-nav ${isNavbarScroll === true ? "scrollTop" : ""}`}>

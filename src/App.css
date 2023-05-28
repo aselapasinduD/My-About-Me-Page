@@ -588,23 +588,41 @@ h1 {
 		position: fixed;
 		gap: 6px;
 		top: 200px;
-		background-color: #ffffff30;
-		backdrop-filter: blur(2px);
+		background-color: #00000030;
+		backdrop-filter: blur(5px);
 		box-shadow: 0 0 5px 4px #00000030;
 		padding: 8px;
 		border-radius: 8px;
 		right: 20px;
 		top: 20px;
+		min-width: 45px;
+		width: 45px;
 		z-index: 1;
+		height: 40px;
+		transition-property: height,width;
+		transition-duration: 0.4s;
 	}
 	.navbar .Navmenu {
 		height: 200px;
-		left: 20px;
+		width: 335px;
+		transition-duration: 0.8s;
 	}
 	.navbar .Navbutton span {
 		width : 30px;
-		border: 2px solid black;
+		border: 2px solid white;
 		border-radius: 2px;
+		transition: all 1s ease-in-out;
+	}
+	.navbar .Navbutton .topX {
+		transform: rotate(45deg);
+		transform-origin: 10% 50%;
+	}
+	.navbar .Navbutton .bottomX {
+		transform: rotate(-45deg);
+		transform-origin: 0% 0%;
+	}
+	.navbar .Navbutton .Hide {
+		opacity: 0%;
 	}
 	.navbar ul {
 		margin: 5px 0;
@@ -669,7 +687,6 @@ h1 {
 	}
 	.navbar .container {
 		display: none;
-		flex-direction: column;
 		position: fixed;
 		width: 100%;
 		max-width: 280px;
@@ -679,43 +696,23 @@ h1 {
 		left: 50%;
 		transform: translateX(-50%);
 		z-index: 1;
+		opacity: 0%;
+		transition: opacity 0.8s;
 	}
 	.navbar .NavMenuItems {
 		display: block;
+		animation-name: animeNavMenuItems;
+		animation-duration: 1s;
+		animation-delay: 0.4s;
+		opacity: 100%;
 	}
-	/* Nav Items Animations */
-	.select-nav-Items {
-		width: 150px;
-		height: 80px;
-		margin-left: 0;
+	@keyframes animeNavMenuItems {
+		0% {opacity: 0%
+		}
+		100% {opacity: 100%
+		}
 	}
-	.move-select-Items {
-		margin-left: 150px;
-	}
-	.move-select-Items3 {
-		margin-left: 300px;
-	}
-	/* NavBar white rectangle shape for .nav-Items */
-	.navbar .container .Items-white {
-		background-color: #ffffff;
-		opacity: 30%;
-		z-index: 0;
-	}
-	/* Socail Icon Animation */
-	.select-social-Icon {
-		width: 70px;
-		margin-left: 0;
-	}
-	.move-social-Icon {
-		margin-left: 70px;
-	}
-	.move-social-Icon3 {
-		margin-left: 140px;
-	}
-	.move-social-Icon4 {
-		margin-left: 210px;
-	}
-	/* NavBar white rectangle shape for .social-Icon */
+	/* NavBar .nav-Items and .social-Icon Animated*/
 	.navbar .container .Icon-white {
 		background-color: #ffffff;
 		opacity: 30%;
@@ -730,6 +727,9 @@ h1 {
 		opacity: 100%;
 		font-weight: bold;
 		color: #ffffff;
+		background-color: #ffffff50;
+		border-radius: 5px;
+		transform: background-color 1s ease-in-out;
 	}
 	.navbar .sections-bar-social .hover-effect:hover {
 		width: 55px;
@@ -806,7 +806,7 @@ h1 {
 	.aboutMeSection .stories .storyList {
 		position: relative;
 		gap: 20px;
-		translate: -340px;
+		transform: translateX(-340px);
 	}
 	.aboutMeSection .details img {
 		display: none;
