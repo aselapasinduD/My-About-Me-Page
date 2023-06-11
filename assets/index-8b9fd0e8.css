@@ -599,7 +599,7 @@ h1 {
   }
   .navbar .Navbutton span {
     width: 30px;
-    border: 2px solid white;
+    border: 2px solid white !important;
     border-radius: 2px;
     transition: all 1s ease-in-out;
   }
