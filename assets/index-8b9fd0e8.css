@@ -24,6 +24,7 @@ h1 {
   font-size: 3.2em;
   font-weight: 400;
   padding: 0;
+  color: #000000 important;
 }
 .navbar h2 {
   position: absolute;
@@ -33,6 +34,7 @@ h1 {
   left: 15vw;
   top: 260px;
   background-image: linear-gradient(90deg, #00597c70, #ff660080);
+  color: #000000 important;
 }
 .navbar ul {
   list-style: none;
