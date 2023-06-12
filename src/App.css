@@ -563,63 +563,66 @@ h1 {
 		left: 16%;
 	}
 }
-@media (max-width: 400px){
+@media screen and (max-device-width: 1300px) and (orientation: portrait) {
 	.navbar {
-		height: 500px;
-	}
-	/* h1 and h2 is the welcome screen text */
-	.navbar h1 {
-		left: 50%;
-		transform: translateX(-50%);
-		top: 250px;
-		letter-spacing: 10px;
-		font-size: 1.8em;
+		height: 800px;
 	}
 	.navbar h2 {
 		left: 50%;
 		transform: translateX(-50%);
-		top: 140px;
+		top: 240px;
+		font-size: 2em;
+	}
+	.navbar h1 {
+		left: 50%;
+		transform: translateX(-50%);
+		top: 340px;
+		letter-spacing: 10px;
+		font-size: 3em;
+		width: 480px;
 	}
 	/* Beginning of the navbar list items and social icons */
 	.navbar .Navbutton {
 		display: flex;
-		flex-direction: column;
-		align-items: end;
 		position: fixed;
-		gap: 6px;
-		top: 200px;
+		flex-direction: column;
+		gap: 8px;
+		padding: 10px;
+		right: 0;
+		z-index: 2;
+	}
+	.navbar .Navbutton_Cav {
+		position: fixed;
+		min-width: 45px;
+		width: 75px;
+		height: 60px;
 		background-color: #00000030;
 		backdrop-filter: blur(5px);
 		box-shadow: 0 0 5px 4px #00000030;
-		padding: 8px;
-		border-radius: 8px;
-		right: 20px;
-		top: 20px;
-		min-width: 45px;
-		width: 45px;
-		z-index: 1;
-		height: 40px;
 		transition-property: height,width;
 		transition-duration: 0.4s;
+		top: 20px;
+		right: 20px;
+		border-radius: 8px;
 	}
 	.navbar .Navmenu {
-		height: 200px;
-		width: 335px;
+		height: 280px;
+		width: 400px;
 		transition-duration: 0.8s;
 	}
-	.navbar .Navbutton span {
-		width : 30px;
-		border: 2px solid white;
-		border-radius: 2px;
+	.navbar .Navbutton_Cav span {
+		width : 55px;
+		border: 4px solid white;
+		border-radius: 4px;
 		transition: all 1s ease-in-out;
 	}
 	.navbar .Navbutton .topX {
 		transform: rotate(45deg);
-		transform-origin: 10% 50%;
+		transform-origin: 15% 50%;
 	}
 	.navbar .Navbutton .bottomX {
 		transform: rotate(-45deg);
-		transform-origin: 0% 0%;
+		transform-origin: 5% 10%;
 	}
 	.navbar .Navbutton .Hide {
 		opacity: 0%;
@@ -634,9 +637,9 @@ h1 {
 		text-decoration: none;
 		color: #ffffff;
 		opacity: 70%;
-		font-size: 1em;
-		font-weight: 500;
-		width: 110px;
+		font-size: 2em;
+		font-weight: 400;
+		width: 180px;
 		vertical-align: -webkit-baseline-middle;
 		transition: font-weight 0.2s ease-in-out;
 	}
@@ -665,13 +668,13 @@ h1 {
 		z-index: 2;
 	}
 	.navbar .sections-bar-social a {
-		width: 70px;
-		height: 55px;
+		width: 80px;
+		height: 85px;
 		margin: 0;
 	}
 	.navbar .social-Icon img {
 		display: block;
-		width: 50px;
+		width: 80px;
 		margin: 0 auto;
 		margin-top: 3px;
 		padding: 0;
@@ -689,27 +692,37 @@ h1 {
 		display: none;
 		position: fixed;
 		width: 100%;
-		max-width: 280px;
+		max-width: 330px;
 		height: unset;
 		margin: unset;
 		top: 30px;
-		left: 50%;
+		left: 75%;
 		transform: translateX(-50%);
 		z-index: 1;
 		opacity: 0%;
 		transition: opacity 0.8s;
+	}
+	@media screen and (max-width: 900px){
+		.navbar .container {
+			left: 72%;
+		}
+	}
+	@media screen and (max-width: 800px){
+		.navbar .container {
+			left: 70%;
+		}
 	}
 	.navbar .NavMenuItems {
 		display: block;
 		animation-name: animeNavMenuItems;
 		animation-duration: 1s;
 		animation-delay: 0.4s;
-		opacity: 100%;
+		animation-fill-mode: forwards;
 	}
 	@keyframes animeNavMenuItems {
-		0% {opacity: 0%
+		from {opacity: 0%
 		}
-		100% {opacity: 100%
+		to {opacity: 100%
 		}
 	}
 	/* NavBar .nav-Items and .social-Icon Animated*/
@@ -746,7 +759,6 @@ h1 {
 		width: 55px;
 		margin: 0 auto -10px auto;
 	}
-	
 	/* About_me Section */
 	.aboutMeSection {
 		height: 1280px;
@@ -855,5 +867,289 @@ h1 {
 	}
 	.footerSection span p.date {
 		margin-left: unset;
+	}
+
+	@media (max-width: 400px){
+		.navbar {
+			height: 500px;
+		}
+		/* h1 and h2 is the welcome screen text */
+		.navbar h1 {
+			left: 50%;
+			transform: translateX(-50%);
+			top: 250px;
+			letter-spacing: 10px;
+			font-size: 1.6em;
+			width: 280px;
+		}
+		.navbar h2 {
+			left: 50%;
+			transform: translateX(-50%);
+			top: 140px;
+			font-size: 1em;
+		}
+		/* Beginning of the navbar list items and social icons */
+		.navbar .Navbutton {
+			gap: 6px;
+			padding: 8px;
+		}
+		.navbar .Navbutton_Cav {
+			width: 45px;
+			height: 40px;
+		}
+		.navbar .Navmenu {
+			height: 200px;
+			width: 335px;
+			transition-duration: 0.8s;
+		}
+		.navbar .Navbutton_Cav span {
+			width : 30px;
+			border: 2px solid white;
+			border-radius: 2px;
+			transition: all 1s ease-in-out;
+		}
+		.navbar .Navbutton .topX {
+			transform: rotate(45deg);
+			transform-origin: 10% 50%;
+		}
+		.navbar .Navbutton .bottomX {
+			transform: rotate(-45deg);
+			transform-origin: 0% 0%;
+		}
+		.navbar .Navbutton .Hide {
+			opacity: 0%;
+		}
+		.navbar ul {
+			margin: 5px 0;
+			padding: 0;
+		}
+		.navbar a {
+			display: inline-block;
+			margin: 0 20px;
+			text-decoration: none;
+			color: #ffffff;
+			opacity: 70%;
+			font-size: 1em;
+			font-weight: 500;
+			width: 110px;
+			vertical-align: -webkit-baseline-middle;
+			transition: font-weight 0.2s ease-in-out;
+		}
+		.navbar .sections-bar-nav a:last-child {
+			line-height: 1em;
+			padding: 6.71px 0;
+		}
+		.navbar .sections-bar-nav {
+			position: unset;
+			top: 0;
+			margin-right: unset;
+		}
+
+		.navbar .nav-Items {
+			display: block;
+			position: relative;
+			text-align: center;
+			z-index: 2;
+		}
+		.navbar br {
+			font-size: 0;
+		}
+		.navbar .social-Icon {
+			display: inline;
+			position: relative;
+			z-index: 2;
+		}
+		.navbar .sections-bar-social a {
+			width: 70px;
+			height: 55px;
+			margin: 0;
+		}
+		.navbar .social-Icon img {
+			display: block;
+			width: 50px;
+			margin: 0 auto;
+			margin-top: 3px;
+			padding: 0;
+			transition: width 0.18s ease-in-out;
+		}
+		.navbar .sections-bar-social {
+			position: unset;
+			margin-left: unset;
+			top: unset;
+		}
+		.navbar .container span {
+			display: none;
+		}
+		.navbar .container {
+			display: none;
+			position: fixed;
+			width: 100%;
+			max-width: 280px;
+			height: unset;
+			margin: unset;
+			top: 30px;
+			left: 50%;
+			transform: translateX(-50%);
+			z-index: 1;
+			opacity: 0%;
+			transition: opacity 0.8s;
+		}
+		.navbar .NavMenuItems {
+			display: block;
+			animation-name: animeNavMenuItems;
+			animation-duration: 1s;
+			animation-delay: 0.4s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes animeNavMenuItems {
+			from {opacity: 0%
+			}
+			to {opacity: 100%
+			}
+		}
+		/* NavBar .nav-Items and .social-Icon Animated*/
+		.navbar .container .Icon-white {
+			background-color: #ffffff;
+			opacity: 30%;
+			width: 280px;
+			z-index: 0;
+		}
+		.navbar .svg-color {
+			filter: invert(100%) ;
+			opacity: 70%;
+		}
+		.navbar .hover-effect:hover {
+			opacity: 100%;
+			font-weight: bold;
+			color: #ffffff;
+			background-color: #ffffff50;
+			border-radius: 5px;
+			transform: background-color 1s ease-in-out;
+		}
+		.navbar .sections-bar-social .hover-effect:hover {
+			width: 55px;
+			margin: 0 auto -10px auto;
+		}
+		.navbar .hover-effect:focus {
+			opacity: 100%;
+			font-weight: bold;
+		}
+		.navbar a:focus-within .hover-effect {
+			opacity: 100%;
+		}
+		.navbar .sections-bar-social img:focus-within .hover-effect {
+			width: 55px;
+			margin: 0 auto -10px auto;
+		}
+		
+		/* About_me Section */
+		.aboutMeSection {
+			height: 1280px;
+			background-color: #FF6600;
+		}
+		.aboutMeSection h1 {
+			font-size: 2.2em;
+		}
+		.aboutMeSection .details h2 {
+			margin: 15px 0;
+			font-weight: 500;
+		}
+		.aboutMeSection .details p {
+			width: unset;
+			font-size: 1em;
+		}
+		.aboutMeSection .details {
+			margin-top: 50px;
+		}
+		.aboutMeSection .details span {
+			margin-top: unset;
+			margin-left: unset;
+			padding: 0 10px;
+		}
+		.aboutMeSection .stories {
+			position: unset;
+			right: unset;
+			left: unset;
+			transform: unset;
+		}
+		.aboutMeSection .stories .storyBox {
+			display: flex;
+			width: 100%;
+			max-width: 340px;
+			overflow-x: hidden;
+			margin: 0 auto;
+		}
+		.aboutMeSection .stories h2 {
+			margin-top: 10px;
+			margin-bottom: unset;
+			font-size: 1.4em;
+		}
+		.aboutMeSection .stories .story {
+			width: 300px;
+			box-shadow: 0 0 10px 3px #00000070;
+			margin: 20px;
+		}
+		.aboutMeSection .stories .story:not(:first-child) {
+			margin-left: unset;
+		}
+		.aboutMeSection .stories .story:first-child {
+			box-shadow: 0 0 10px 3px #00000070;
+		}
+		.aboutMeSection .stories .story:last-child {
+			box-shadow: 0 0 10px 3px #00000070;
+		}
+		.aboutMeSection .stories .storyList {
+			position: relative;
+			gap: 20px;
+			transform: translateX(-340px);
+		}
+		.aboutMeSection .details img {
+			display: none;
+		}
+
+		/* Footer Section */
+		.footerSection {
+			height: 753px;
+			background-color: #FF6600;
+		}
+		.footerSection .pageDetails {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+			justify-content: unset;
+			align-items: center;
+			padding-top: 30px;
+			gap: 35px
+		}
+		.footerSection .pageDetails .form {
+			display: none;
+		}
+		.footerSection .selfImage img {
+			width: 300px;
+			border-radius: 51%;
+		}
+		.footerSection .pageDetails ul {
+			list-style: none;
+			padding: 0;
+		}
+		.footerSection hr {
+			margin: 0 15px;
+			margin-top: 30px;
+			border-color: #131616;
+		}
+		.footerSection span {
+			display: flex;
+			justify-content: center;
+			opacity: 80%;
+			gap: 25px;
+			margin: unset;
+		}
+		.footerSection span p.copyrights {
+			margin-left: unset;
+			padding-left: unset;
+		}
+		.footerSection span p.date {
+			margin-left: unset;
+		}
 	}
 }

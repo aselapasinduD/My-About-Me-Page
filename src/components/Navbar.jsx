@@ -95,10 +95,12 @@ const NavBar = (scroll) => {
 	<nav className="navbar">
 		<h2>Welcome to my portfolio</h2>
 		<h1>{"Hi! I'm Asela "}<span className="wrap">{text}</span></h1>
-		<div ref={openMenu} onClick={showNavMenu} className="Navbutton">
-			<span ref={closeTopX}></span>
-			<span ref={closeHide}></span>
-			<span ref={closeBottomX}></span>
+		<div ref={openMenu} className="Navbutton_Cav">
+			<div onClick={showNavMenu} className="Navbutton">
+				<span ref={closeTopX}></span>
+				<span ref={closeHide}></span>
+				<span ref={closeBottomX}></span>
+			</div>
 		</div>
 		<div ref={showMenuList} className={`container ${isNavbarScroll === true ? "NavbarScroll": ""}`}>
 			<div className={`sections-bar-nav ${isNavbarScroll === true ? "scrollTop" : ""}`}>
