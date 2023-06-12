@@ -1,17 +1,17 @@
 {
-  "hash": "24d1183d",
-  "browserHash": "abd78edc",
+  "hash": "3d1cf68a",
+  "browserHash": "71f55e34",
   "optimized": {
     "react": {
       "src": "../../node_modules/react/index.js",
       "file": "react.js",
-      "fileHash": "212f2583",
+      "fileHash": "7b5f705c",
       "needsInterop": true
     },
     "react-dom/client": {
       "src": "../../node_modules/react-dom/client.js",
       "file": "react-dom_client.js",
-      "fileHash": "445f7135",
+      "fileHash": "472ad228",
       "needsInterop": true
     }
   },
