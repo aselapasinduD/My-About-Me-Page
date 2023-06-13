@@ -221,6 +221,7 @@ h1 {
 	width: 35vw;
 	font-size: 1.3em;
 	font-weight: 300;
+	text-align: justify;
 }
 .aboutMeSection .details {
 	display: flex;
@@ -336,6 +337,9 @@ h1 {
 }
 /*Current Projects*/
 .currentProjectSection {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	height: 900px;
 	background-color: #131616;
 	text-align: center;
@@ -345,13 +349,14 @@ h1 {
 }
 .currentProjectSection .currentProjectCards {
 	display: flex;
-	justify-content: center;
 	gap: 35px;
+}
+.currentProjectSection .currentProjectBox {
 	margin-top: 50px;
 }
 .currentProjectSection .projectCard {
-	width: 350px;
-	height: 620px;
+	min-width: 350px;
+	min-height: 620px;
 	background-color: #D9D9D9;
 	border-radius: 30px;
 	text-align: center;
@@ -360,8 +365,8 @@ h1 {
 	margin-top: 20px;
 }
 .currentProjectSection button {
-	width: 200px;
-	height: 50px;
+	min-width: 200px;
+	min-height: 50px;
 	margin-top: 50px;
 	background-color: #FF6600;
 	border-radius: 25px;
@@ -604,6 +609,7 @@ h1 {
 		top: 20px;
 		right: 20px;
 		border-radius: 8px;
+		z-index: 1;
 	}
 	.navbar .Navmenu {
 		height: 280px;
@@ -765,15 +771,16 @@ h1 {
 		background-color: #FF6600;
 	}
 	.aboutMeSection h1 {
-		font-size: 2.2em;
+		font-size: 2.8em;
 	}
 	.aboutMeSection .details h2 {
 		margin: 15px 0;
 		font-weight: 500;
+		font-size: 2.2em;
 	}
 	.aboutMeSection .details p {
 		width: unset;
-		font-size: 1em;
+		font-size: 2.2em;
 	}
 	.aboutMeSection .details {
 		margin-top: 50px;
@@ -792,17 +799,18 @@ h1 {
 	.aboutMeSection .stories .storyBox {
 		display: flex;
 		width: 100%;
-		max-width: 340px;
+		max-width: 440px;
 		overflow-x: hidden;
 		margin: 0 auto;
 	}
 	.aboutMeSection .stories h2 {
 		margin-top: 10px;
 		margin-bottom: unset;
-		font-size: 1.4em;
+		font-size: 2em;
 	}
 	.aboutMeSection .stories .story {
-		width: 300px;
+		width: 400px;
+		height: 615px;
 		box-shadow: 0 0 10px 3px #00000070;
 		margin: 20px;
 	}
@@ -818,10 +826,40 @@ h1 {
 	.aboutMeSection .stories .storyList {
 		position: relative;
 		gap: 20px;
-		transform: translateX(-340px);
+		transform: translateX(-440px);
 	}
 	.aboutMeSection .details img {
 		display: none;
+	}
+
+	/* Skills Section */
+	.skillsSection h1 {
+		font-size: 2.8em;
+	}
+	.skillsSection .skillsList {
+		width: 537px;
+	}
+
+	/* Current Projects Sections */
+	.currentProjectSection h1 {
+		font-size: 2.8em;
+	}
+	.currentProjectSection .currentProjectBox {
+		overflow-x: hidden;
+		width: 354px;
+	}
+	.currentProjectSection .currentProjectCards {
+		transform: translateX(-385px);
+	}
+	.currentProjectSection button {
+		width: 250px;
+		height: 60px;
+	}
+	.currentProjectSection button:hover {
+		width: 270px;
+	}
+	.currentProjectSection button p {
+		font-size: 1.8em;
 	}
 
 	/* Footer Section */
@@ -1048,11 +1086,12 @@ h1 {
 			background-color: #FF6600;
 		}
 		.aboutMeSection h1 {
-			font-size: 2.2em;
+			font-size: 1.8em;
 		}
 		.aboutMeSection .details h2 {
 			margin: 15px 0;
 			font-weight: 500;
+			font-size: 1.4em;
 		}
 		.aboutMeSection .details p {
 			width: unset;
@@ -1105,6 +1144,26 @@ h1 {
 		}
 		.aboutMeSection .details img {
 			display: none;
+		}
+
+		/* skills Section */
+		.skillsSection h1 {
+			font-size: 1.8em;
+		}
+
+		/* currentProject Section */
+		.currentProjectSection h1 {
+			font-size: 1.8em;
+		}
+		.currentProjectSection button {
+			width: 200px;
+			height: 50px;
+		}
+		.currentProjectSection button:hover {
+			width: 220px;
+		}
+		.currentProjectSection button p {
+			font-size: 1.3em;
 		}
 
 		/* Footer Section */

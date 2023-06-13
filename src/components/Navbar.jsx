@@ -34,7 +34,7 @@ const NavBar = (scroll) => {
 	const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 	const [isNavbarScroll, setNavbarScroll] = useState(false);
 	const fixedNavbar = () => {
-		if (isMobile === false) {
+		if (isMobile === false & window.innerHeight < window.innerWidth) {
 			if (window.scrollY > 650){
 				setNavbarScroll(true);
 			} else {
