@@ -499,6 +499,23 @@ h1 {
 		width: 280px;
 		height: 515px;
 	}
+	/* Skills Sections */
+	.skillsSection {
+		height: 450px;
+	}
+	.skillsSection .skills-wrapper .left-button {
+		padding-left: 60px;
+	}
+	.skillsSection .skills-wrapper .right-button {
+		padding-right: 60px;
+	}
+	.skillsSection .skillsList {
+		max-width: 1110px;
+	}
+	/* Footer Section */
+	.footerSection .pageDetails {
+		gap: 40px;
+	}
 }
 
 @media (max-width: 1400PX) {
@@ -568,6 +585,9 @@ h1 {
 		padding-top: 20px;
 		font-size: 1.8em;
 	}
+	.aboutMeSection {
+		height: 1380px;
+	}
 	.aboutMeSection .details img {
 		width: 700px;
 	}
@@ -579,6 +599,19 @@ h1 {
 	}
 	.aboutMeSection .details {
 		margin-top: 20px;
+	}
+
+	/* Current Project */
+	.currentProjectSection {
+		height: 860px;
+	}
+
+	/* Footer Section */
+	.footerSection {
+		height: 480px;
+	}
+	.footerSection .pageDetails {
+		padding-top: 60px;
 	}
 }
 
