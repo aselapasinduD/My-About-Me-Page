@@ -7,7 +7,7 @@
 }
 h1 {
 	text-align: center;
-	font-size: 2em;
+	font-size: 2.2em;
 	padding-top: 30px;
 }
 
@@ -62,7 +62,6 @@ h1 {
 }
 .navbar .sections-bar-nav {
 	position: absolute;
-	top: 636px;
 	margin-right: 50vw;
 }
 
@@ -96,7 +95,6 @@ h1 {
 .navbar .sections-bar-social {
 	position: absolute;
 	margin-left: 50vw;
-	top: 636px;
 }
 .navbar .container span {
 	display: inline-block;
@@ -111,7 +109,9 @@ h1 {
 }
 .navbar .container {
 	display: flex;
+	position: absolute;
 	justify-content: center;
+	top: 636px;
 	width: 100%;
 	height: 0;
 	margin: 0 auto;
@@ -187,6 +187,7 @@ h1 {
 	z-index: 3;
 	height: 82px;
 	width: 100%;
+	top: 0 !important;
 	background-image: url("/src/assets/images/navbar_background.png");
 	background-position: left bottom;
 	background-size: cover;
@@ -209,9 +210,6 @@ h1 {
 .aboutMeSection {
 	height: 1420px;
 	background-color: #FF6600;
-}
-.aboutMeSection h1 {
-	font-size: 2.2em;
 }
 .aboutMeSection .details h2 {
 	margin: 15px 0;
@@ -268,9 +266,6 @@ h1 {
 .skillsSection {
 	height: 500px;
 	background-color: #131616;
-}
-.skillsSection h1 {
-	font-size: 2.2em;
 }
 .skillsSection .skills-wrapper {
 	display: flex;
@@ -343,9 +338,6 @@ h1 {
 	height: 900px;
 	background-color: #131616;
 	text-align: center;
-}
-.currentProjectSection h1 {
-	font-size: 2.2em;
 }
 .currentProjectSection .currentProjectCards {
 	display: flex;
@@ -491,9 +483,6 @@ h1 {
 	margin-left: auto;
 }
 @media (max-width: 1700PX) {
-	.navbar h1 {
-		font-size: 2.5em;
-	}
 	.navbar h2 {
 		font-size: 1.3em;
 	}
@@ -511,22 +500,26 @@ h1 {
 		height: 515px;
 	}
 }
+
 @media (max-width: 1400PX) {
+	/* Navbar Responsive Sections */
+	.navbar {
+		height: 540px;
+	}
 	.navbar h1 {
 		font-size: 2em;
-	}
-}
-@media (max-width: 1300PX) {
-	/* Navbar Responsive Sections */
-	.navbar h1 {
-		font-size: 1.6em;
+		top: 260px;
 	}
 	.navbar h2 {
-		font-size: 1em;
+		font-size: 1.2em;
+		top: 200px;
 	}
 	.navbar a {
 		font-size: 1em;
 		margin: 0 10px;
+	}
+	.navbar .container {
+		top: 460px;
 	}
 	.navbar .container span {
 		height: 60px;
@@ -558,6 +551,23 @@ h1 {
 		width: 50px;
 		margin: 4px auto -10px auto;
 	}
+	.navbar .container.NavbarScroll{
+		height: 74px;
+	}
+	@keyframes navbarScrollHeight {
+		from{
+			height: 40px;
+		}
+		to {
+			height: 74px;
+		}
+	}
+
+	/* About Me Section */
+	h1 {
+		padding-top: 20px;
+		font-size: 1.8em;
+	}
 	.aboutMeSection .details img {
 		width: 700px;
 	}
@@ -567,7 +577,24 @@ h1 {
 		right: unset;
 		left: 16%;
 	}
+	.aboutMeSection .details {
+		margin-top: 20px;
+	}
 }
+
+@media (max-width: 1300PX) {
+	h1 {
+		font-size: 1.6em;
+	}
+	.navbar h1 {
+		font-size: 1.6em;
+	}
+	.navbar h2 {
+		font-size: 1em;
+	}
+	
+}
+
 @media screen and (max-device-width: 1300px) and (orientation: portrait) {
 	.navbar {
 		height: 800px;
