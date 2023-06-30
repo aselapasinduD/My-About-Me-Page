@@ -4,15 +4,15 @@ import selfImage from '../assets/images/Self-Image.jpg';
 const Footer = () => {
 	
 	return (
-		<div class="footerSection">
-			<div class="pageDetails">
-				<section class="selfImage">
+		<div className="footerSection">
+			<div className="pageDetails">
+				<section className="selfImage">
 					<img src={selfImage} alt="Asela Pasindu Image"/>
 					<p>
 						Hello I'm Asela.
 					</p>
 				</section>
-				<section class="pageLinks">
+				<section className="pageLinks">
 					<h3>Pages</h3>
 					<ul>
 						<li>page1</li>
@@ -20,7 +20,7 @@ const Footer = () => {
 						<li>page3</li>
 					</ul>
 				</section>
-				<section class="contacts">
+				<section className="contacts">
 					<h3>Contacts</h3>
 					<ul>
 						<li>contact1</li>
@@ -29,23 +29,27 @@ const Footer = () => {
 						<li>contact4</li>
 					</ul>
 				</section>
-				<section class="form">
+				<section className="form">
 					<label name="fullName">Full Name</label>
 					<label name="email">Email</label>
-				<form class="contactForm">
-					<input id="fullName" class="inputs" placeholder="Asela Pasindu" type="name" />
-					<input id="email" class="inputs" placeholder="email address" type="email" />
-					<input id="massage" class="inputs" placeholder="Massage..." type="text" />
-					<input id="send" class="inputs" value="send" name="Send" type="submit" />
+				<form className="contactForm" onSubmit="return confirm('Do you want to submit?')" action="https://formsubmit.co/9fab8c8ffa0ed330737b9d844f29af25" method="POST" >
+					<input id="fullName" className="inputs" placeholder="Asela Pasindu" type="name" name="name" required />
+					<input id="email" className="inputs" placeholder="email address" type="email" name="email" required />
+					<textarea id="message" className="inputs" placeholder="typing..." type="text" name="message" required />
+					<input id="send" className="inputs" value="Send" type="submit" />
+					<input type="hidden" name="_subject" value="New submission Form My Portfolio Website" />
+					<input type="hidden" name="_template" value="box" />
+					<input type="hidden" name="_captcha" value="true" />
+					<input type="hidden" name="_next" value="http://localhost:5173/" />
 				</form>
 				</section>
 			</div>
 			<hr />
 			<span>
-				<p class="copyrights">
+				<p className="copyrights">
 					copyrights©AselaPasinduDias
 				</p>
-				<p class="date">
+				<p className="date">
 					4/7/2023
 				</p>
 			</span>

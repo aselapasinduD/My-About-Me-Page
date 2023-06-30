@@ -406,11 +406,13 @@ h1 {
 	height: 65px;
 	margin-left: 12px;
 }
-.footerSection .contactForm #massage {
+.footerSection .contactForm #message {
+	resize: none;
 	width: 523px;
 	height: 222px;
 	margin-top: 12px;
 	text-align: left;
+	padding: 20px;
 }
 .footerSection .contactForm #send {
 	width: 120px;
@@ -442,6 +444,7 @@ h1 {
 	border: none;
 	border-radius: 30px;
 	font-size: 1.2em;
+	font-family: sans-serif;
 	color: #131616;
 	text-align: center;
 	background-color: #ffffff;
